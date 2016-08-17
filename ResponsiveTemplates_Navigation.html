@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Navigation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <style>
+    *
+    {
+      box-sizing: border-box;
+    }
+    .row .col {
+        float: left;
+        margin-left: 0;
+       /* box-sizing: border-box;*/
+        /* padding: 0 0.75rem; */
+    }
+    #list li a
+    {
+      display: block;
+      height: 100%;
+    }
+    nav .nav-wrapper {
+        position: relative;
+        height: 100%;
+        margin-left: 21%;
+    }
+    h1 {
+        font-size: 4.2rem;
+        line-height: 110%;
+        margin: 2.1rem 0 1.68rem 0;
+        margin-left: 32%;
+    }
+    nav {
+        color: #fff;
+        background-color: #424242;
+        width: 100%;
+        height: 56px;
+        line-height: 56px;
+    }
+    p,h3{
+      margin-left: 29%;
+    }
+    .side-nav {
+        position: fixed;
+        width: 240px;
+        left: 0;
+        color:#424242;
+        top: 0;
+        margin: 0;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        height: 100%;
+        height: calc(100% + 60px);
+        height: -moz-calc(100%);
+        padding-bottom: 60px;
+        background-color: #D7D6D7;
+        z-index: 999;
+        /*-webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow-y: auto;
+        will-change: transform;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translateX(-105%);
+        transform: translateX(-105%);*/
+    }
+    .slide-nav li :hover{
+        background-color: #424242;
+    }
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .s
+  </style>
+</head>
+<body>
+  
+  <div class ="col s12 m12 l12">
+      <nav class="s12 m12 l12">
+          <div class="nav-wrapper" class="col s6 m10 l12">
+              <ul id="nav-mobile" class="left-align">
+                <li><a href="sass.html">About</a></li>
+                <li><a href="badges.html">Getting Started</a></li>
+                <li><a href="collapsible.html">Templates</a></li>
+                <li><a href="sass.html">Components</a></li>           
+              </ul>
+          </div>
+      </nav>
+      </div>
+  </div>   <!-- Navbar goes here -->
+
+    <!-- Page Layout here -->
+    <div class="row col s12 m12 l12" style="padding-left: 0;">
+          <div class="col s12 m4 l6" style="padding-left: 0;display: block;height: auto;"> 
+          
+          <ul id="slide-out" class="side-nav fixed">
+            <li><a href="#!">First Sidebar Link</a></li>
+            <li><a href="#!">Second Sidebar Link</a></li>
+          </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          </div>
+
+          <div class="col s12 m8 l9"> 
+              <div>
+              <h3>Text Goes here</h3>
+              <p>Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+              </p>
+              </div>
+
+          </div>
+              
+    </div>
+
+</body>
+</html>

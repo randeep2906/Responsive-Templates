@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <style>
+      * {
+      box-sizing: border-box;
+      }
+      .row::after {
+      content: "";
+      clear: both;
+      display: block;
+      }
+      [class*="col-"] {
+      float: left;
+      padding: 15px;
+      }
+      /*.col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}*/
+      html {
+      font-family: "Roboto", sans-serif;
+      }
+      .header {
+      background-color: #9933cc;
+      color: #ffffff;
+      padding: 15px;
+      }
+      /*.menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      }*/
+      .header {
+      background-color: #424242;
+      color: #ffffff;
+      padding: 15px;
+      }
+      p{
+      text-align: justify;
+      }
+      .tabs .tab a {
+          color: #424242;
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          /*transition: color .28s ease;*/
+      }
+      .tabs .tab a:hover {
+          color: #424242;
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          transition: color .28s ease;
+      }
+      .tabs .indicator {
+          position: absolute;
+          bottom: 0;
+          height: 2px;
+          background-color: #424242;
+          will-change: left, right;
+      }      
+
+      .tabs .tab.disabled a {
+          color:#424242 ;
+          cursor: default;
+      }
+      .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      }
+      .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      margin-top: 3%;
+      background-color :#DAD9DA;
+      color: #424242;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      }
+      .menu li:hover {
+      background-color: #424242;
+      color:White;
+      }
+      footer.page-footer {
+          margin-top: 20px;
+          padding-top: 20px;
+          background-color: #424242;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header s12 m12 l12">
+      <h1>Responsive Templates</h1>
+    </div>
+    <div class="row">
+      <div class="col s3 m3 l3 menu">
+        <ul>
+          <li>Left Menu</li>
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+        </ul>
+      </div>
+      <div class="col s4 m4 l4">
+        <h3>Text Goes here</h3>
+        <p>Why do we use it?
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+        <p>Why do we use it?
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+      </div>
+      <div class="col s4 m4 l4">
+        <h3>Text Goes here</h3>
+        <p>Why do we use it?
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+        <p>Why do we use it?
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+      </div>
+    </div>
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+            
+  </body>
+</html>

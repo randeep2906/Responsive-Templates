@@ -1,0 +1,105 @@
+<apex:page standardController="SFA_Quota__c" extensions="QuotaPOCExtension" showHeader="false" sidebar="false" standardStylesheets="false" id="page">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="{!URLFOR($Resource.ISI_Static, 'css/material.indigo-pink.min.css')}" />
+    <link rel="stylesheet" href="{!URLFOR($Resource.ISI_Static, 'css/materializeModified.css')}" />
+    <script src="{!URLFOR($Resource.ISI_Static, 'js/material.min.js')}"></script>
+    <apex:includeScript value="{!URLFOR($Resource.UI, 'jquery-1.8.3.js')}" />
+    <script src="{!URLFOR($Resource.ISI_Static, 'js/jquery-ui.js')}"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <style>
+      * {
+      box-sizing: border-box;
+      }
+      .row::after {
+      content: "";
+      clear: both;
+      display: block;
+      }
+      [class*="col-"] {
+      float: left;
+      padding: 15px;
+      }
+     
+      html {
+      font-family: "Roboto", sans-serif;
+      }
+      .header {
+      background-color: #9933cc;
+      color: #ffffff;
+      padding: 15px;
+      }
+      /*.menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      }*/
+      .header {
+      background-color: #424242;
+      color: #ffffff;
+      padding: 15px;
+      }
+      p{
+      text-align: justify;
+      }
+     ÷
+      /*.tabs .indicator {
+          position: absolute;
+          bottom: 0;
+          height: 2px;
+          background-color: #424242;
+          will-change: left, right;
+      }  */    
+
+      /*.tabs .tab.disabled a {
+          color:#424242 ;
+          cursor: default;
+      }
+      .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      }*/
+      /*.menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      margin-top: 3%;
+      background-color :#DAD9DA;
+      color: #424242;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      }
+      .menu li:hover {
+      background-color: #424242;
+      color:White;
+      }*/
+
+    </style>
+  </head>
+  <body>
+    <div class="header s12 m12 l12">
+      <h1>Responsive Templates</h1>
+    </div>
+    <div class="row">
+      
+          <div class="col s12 m12 l12">
+              <div class="col s6 m4 l3">
+                <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.</p>           
+              </div>
+              <div class="col s6 m4 l3">
+                <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.</p>           
+              </div>
+              <div class="col s6 m4 l3">
+                <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.</p>           
+              </div>
+              <div class="col s6 m4 l3">
+                <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.</p>           
+              </div>
+           
+          </div>
+    </div>
+  </body>
+</html>
